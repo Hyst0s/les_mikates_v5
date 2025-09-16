@@ -1,0 +1,30 @@
+.section6{
+  width: 100%;
+  height: 750px;
+  display: flex;
+  margin-top: 10%;
+  background-color: #371708;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: #371708;
+  background-image: url("images/accueil/déco_ligne.png");
+  background-repeat: repeat-x;
+}
+
+.avis{
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 23%;
+  height: 400px;
+}
+
+.text3{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Passion One', cursive;
+  font-size: 25px;
+}
