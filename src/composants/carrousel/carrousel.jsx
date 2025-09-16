@@ -7,9 +7,9 @@ export default function Carrousel() {
         <div className="image-accueil2"></div>
 
         <div className="image-accueil3">
-          <img src="../src/assets/image_produit/images/accueil/plat2.png" alt="Plat 2" />
-          <img src="../src/assets/image_produit/images/accueil/plat1.png" alt="Plat 1" />
-          <img src="../src/assets/image_produit/images/accueil/plat3.png" alt="Plat 3" />
+          <img src="../src/assets/images/accueil/plat2.png" alt="Plat 2" />
+          <img src="../src/assets/images/accueil/plat1.png" alt="Plat 1" />
+          <img src="../src/assets/images/accueil/plat3.png" alt="Plat 3" />
         </div>
       </section>
 

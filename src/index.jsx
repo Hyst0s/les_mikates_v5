@@ -1,27 +1,25 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import './index.css';
 import Header from './composants/header/header.jsx';
 import Footer from './composants/footer/footer.jsx';
 import Form_inscription from './composants/inscription/inscription.jsx';
 import Form_connexion from './composants/connexion/connexion.jsx';
-import Fiche_produit from './composants/fiche_produit/fiche_produit.jsx'
 import Avis_client from './composants/avis_client/avis_client.jsx';
-import Carte_produit from './composants/carte_produit/carte_produit.jsx';
-import Carte_prod_panier from './composants/carte_prod_panier/carte_prod_panier.jsx';
-import Carrousel from './composants/carrousel/carrousel.jsx';
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header />
-    <Form_inscription />
-    {/* <Form_connexion /> */}
-    <Fiche_produit />
-    <Avis_client />
-    {/* <Carte_produit /> */}
-    <Carte_prod_panier />
-    <Carrousel />
+    <main>
+        <section class="section1"></section>
+        <section class="section2"></section>
+        <section class="section3"></section>
+        <section class="section4"></section>
+        <section class="section5"></section>
+        <section class="section6">
+            <Avis_client />
+        </section>
+    </main>
     <Footer />
   </StrictMode>
 );
-

@@ -1,14 +1,13 @@
-import React from 'react';
 import './footer.css';
-import logo_mikate from 'src/assets/images/logos/logo_mikate.png';
+import logo_mikate from '../../assets/images/logos/logo_mikate.png'; //header.jsx → dossier header → ../ donne src/composants/ → ../ donne src/ → puis assets/....
 
-// ⬇️ Option A : images dans src/assets (on les importe)
-import phone from '../src/assets/image_produit/images/accueil/téléphone.png';
-import mail from '../src/assets/image_produit/images/accueil/mail.png';
-import map from '../src/assets/image_produit/images/accueil/map.png';
-import facebook from '../src/assets/image_produit/images/accueil/facebook_logo.png';
-import instagram from '../src/assets/image_produit/images/accueil/instagram 1.png';
-import youtube from '../src/assets/image_produit/images/accueil/youtube.png';
+// // ⬇️ Option A : images dans src/assets (on les importe)
+// import phone from '../src/assets/image_produit/images/accueil/téléphone.png';
+// import mail from '../src/assets/image_produit/images/accueil/mail.png';
+// import map from '../src/assets/image_produit/images/accueil/map.png';
+// import facebook from '../src/assets/image_produit/images/accueil/facebook_logo.png';
+// import instagram from '../src/assets/image_produit/images/accueil/instagram 1.png';
+// import youtube from '../src/assets/image_produit/images/accueil/youtube.png';
 
 export default function Footer() {
   return (
@@ -41,17 +40,17 @@ export default function Footer() {
 
           <div className="coordonées_img">
             <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-              <img src={phone} alt="" width={25} />
+              {/* <img src={phone} alt="" width={25} /> */}
               <h4>06.13.50.55.73</h4>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-              <img src={mail} alt="" width={35} />
+              {/* <img src={mail} alt="" width={35} /> */}
               <h4>lesmikatesdebetti@gmail.com</h4>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-              <img src={map} alt="" width={25} />
+              {/* <img src={map} alt="" width={25} /> */}
               <h4>
                 Livraison de beignets et plats chauds les week-ends <br />
                 sur TOURS ET LES ALENTOURS
@@ -65,13 +64,13 @@ export default function Footer() {
 
           <div className="icon_reseau">
             <a href="https://www.facebook.com/share/177yBt8PgQ/" target="_blank" rel="noopener noreferrer">
-              <img src={facebook} alt="Facebook" />
+              {/* <img src={facebook} alt="Facebook" /> */}
             </a>
             <a href="https://www.instagram.com/betti_auquotidien?igsh=MWprcnplb2Y2NjBsZw==" target="_blank" rel="noopener noreferrer">
-              <img src={instagram} alt="Instagram" />
+              {/* <img src={instagram} alt="Instagram" /> */}
             </a>
             <a href="https://youtube.com/@bettinak-desruisseaux?si=9H1zPiBgy27IRKWZ" target="_blank" rel="noopener noreferrer">
-              <img src={youtube} alt="YouTube" />
+              {/* <img src={youtube} alt="YouTube" /> */}
             </a>
           </div>
 

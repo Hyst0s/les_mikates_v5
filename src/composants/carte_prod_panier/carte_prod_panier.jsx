@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './carte_prod_panier.css';
 
 // Option 1 : si tes images sont dans src/assets, on les importe :
-import imgPlat from '../src/assets/image_produit/images/commander/plat_1.png';
-import imgPoubelle from '../src/assets/image_produit/images/commander/poubelle.png';
+import imgPlat from '../../assets/images/commander/plat_1.png';
+import imgPoubelle from '../../assets/images/commander/poubelle.png';
 
 // Option 2 (à la place des imports ci-dessus) : si tes images sont dans /public/images,
 // utilise: <img src="/images/commander/plat1.png" ... />

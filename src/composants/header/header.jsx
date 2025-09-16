@@ -1,6 +1,5 @@
-
 import './header.css'
-import logo_mikate from 'src/assets/images/logos/logo_mikate.png';
+import logo_mikate from '../../assets/images/logos/logo_mikate.png'; //header.jsx → dossier header → ../ donne src/composants/ → ../ donne src/ → puis assets/....
 
 function Header() {
     return(
