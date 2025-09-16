@@ -9,6 +9,8 @@ import Avis_client from './composants/avis_client/avis_client.jsx';
 import Carte_produit from './composants/carte_produit/carte_produit.jsx';
 import Carte_prod_panier from './composants/carte_prod_panier/carte_prod_panier.jsx';
 import Carrousel from './composants/carrousel/carrousel.jsx';
+import Banniere from './composants/banniere/banniere.jsx';
+import Bloc_commande from './composants/bloc_commande/bloc_commande.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -21,6 +23,8 @@ createRoot(document.getElementById('root')).render(
     {/* <Carte_produit /> */}
     <Carte_prod_panier />
     <Carrousel />
+    <Banniere />
+    <Bloc_commande />
     <Footer />
   </StrictMode>
 );
