@@ -8,6 +8,7 @@ import Banniere from './banniere.jsx';
 import Avis_client from './avis_client.jsx';
 import Carrousel from './carrousel.jsx';
 import Produit_panier from './produit_panier.jsx';
+import Bloc_commande from './bloc_commande.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -19,6 +20,8 @@ createRoot(document.getElementById('root')).render(
     <Avis_client />
     <Carrousel />   
     <Produit_panier /> 
+    <Bloc_commande />
+    <Connexion />
     
   </StrictMode>
 );

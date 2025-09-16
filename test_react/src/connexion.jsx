@@ -1,30 +1,59 @@
+import './connexion.css';
 
-import "./connexion.css";
-
-function Connexion() {
+export default function Connexion() {
   return (
-    <div class="card" role="main" aria-labelledby="titre">
-        <h1 id="titre" class="title">Connexion</h1>
+    <div className="card" role="main" aria-labelledby="titre">
+      <h1 id="titre" className="title">Connexion</h1>
 
-    <form action="../connexion/config_connexion.php" method="post" enctype="multipart/form-data">
-      <div class="field">
-        <label for="email">Adresse mail</label>
-        <input id="email" name="email" type="email" placeholder="Adresse mail" required autocomplete="email" inputmode="email"/>
-      </div>
+      <form
+        action="../connexion/config_connexion.php"
+        method="post"
+        encType="multipart/form-data"
+      >
+        <div className="field">
+          <label htmlFor="email">Adresse mail</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Adresse mail"
+            required
+            autoComplete="email"
+            inputMode="email"
+          />
+        </div>
 
-      <div class="field">
-        <label for="mdp">Mot de passe</label>
-        <input id="mdp" name="mdp" type="password" placeholder="Mot de passe" required autocomplete="current-password"/>
-      </div>
+        <div className="field">
+          <label htmlFor="mdp">Mot de passe</label>
+          <input
+            id="mdp"
+            name="mdp"
+            type="password"
+            placeholder="Mot de passe"
+            required
+            autoComplete="current-password"
+          />
+        </div>
 
-      <button type="submit">Se connecter</button>
-    </form>
+        <button type="submit">Se connecter</button>
+      </form>
 
-    <p style="margin-top:18px; font-size:14px; text-align:center; color:var(--muted);">
-      Pas encore de compte ? <a href="../formulaire_inscription/inscription.php" style="color:var(--accent-2); font-weight:600; text-decoration:none;">Inscription</a>
-    </p>
+      <p
+        style={{
+          marginTop: 18,
+          fontSize: 14,
+          textAlign: 'center',
+          color: 'var(--muted)',
+        }}
+      >
+        Pas encore de compte ?{' '}
+        <a
+          href="../formulaire_inscription/inscription.php"
+          style={{ color: 'var(--accent-2)', fontWeight: 600 }}
+        >
+          S’inscrire
+        </a>
+      </p>
     </div>
   );
 }
-
-export default Connexion;
