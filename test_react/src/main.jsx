@@ -9,6 +9,8 @@ import Avis_client from './avis_client.jsx';
 import Carrousel from './carrousel.jsx';
 import Produit_panier from './produit_panier.jsx';
 import Bloc_commande from './bloc_commande.jsx';
+import Header from './header.jsx';
+import Footer from './footer.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -22,6 +24,8 @@ createRoot(document.getElementById('root')).render(
     <Produit_panier /> 
     <Bloc_commande />
     <Connexion />
+    <Header />
+    <Footer />
     
   </StrictMode>
 );
