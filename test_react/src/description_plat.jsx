@@ -3,7 +3,7 @@ import "./description_plat.css"
 function Description_plat() {
   return(
     
-    <section className="section1">
+    <section className="section10">
     <div class="titre">
       <h1>Description du plat</h1>
     </div>

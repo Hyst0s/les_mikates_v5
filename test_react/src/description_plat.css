@@ -1,101 +1,91 @@
-.section1{
+.section10{
+  max-width: 980px;          /* largeur lisible */
+  margin: 0 auto;            /* centre la section */
+  padding: 48px 16px;
+  min-height: 100vh;         /* hauteur mini plein écran */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* centre tous les enfants */
+  gap: 28px;                 /* espace vertical constant */
+  text-align: center;        /* texte centré par défaut */
+  box-sizing: border-box;
+}
+
+/* TITRES */
+.titre,
+.titre2{
+  font-family: 'Poly', sans-serif;
+  color: #953910;
+}
+.titre{  font-size: 28px; }
+.titre2{ font-size: 22px; }
+
+/* IMAGE DU PLAT + CADRE */
+.img_plat{
   width: 100%;
-  height: 2200px;
-  margin-top: 10%;
-  }
+  aspect-ratio: 1 / 1;  /* zone carrée, responsive */
+  display: grid;
+  place-items: center;
 
-  .titre{
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poly', sans-serif;
-    font-size: 25px;
-    color: #953910;
-  }
-
-  .img_plat{
-    width: 150%;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../src\assets\image_produit\images\description_plat\cercle_img.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  /* ⚠️ toujours des / dans les chemins */
+  background-image: url('../src/assets/image_produit/images/description_plat/cercle_img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;   /* cadre qui s’adapte */
 }
 
 .img_plat img{
-  width: 70%;
   position: relative;
-  top: 3.2%;
-  left: 0.5%
+  top: 3%;
+  width: 70%;
+  height: auto;
+
 }
 
-.texte{
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+/* BLOCS DE TEXTE */
+.texte,
+.texte3{
+  max-width: 760px;                /* ligne pas trop longue */
   font-family: 'Poly', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #953910;
+  margin: 0 auto;
 }
 
-.button{
+/* LISTE D’INGRÉDIENTS (bloc centré, texte lisible à gauche) */
+.liste_ingredients{
   width: 100%;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.liste_ingredients ul{
+  text-align: left;                /* plus lisible pour une liste */
+  margin: 0; padding-left: 1.2rem; /* garde les puces */
+  color: #953910;
+  font-family: 'Poly', sans-serif;
+  font-size: 18px;
+}
+
+/* BOUTON */
+.button{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .button button{
-  width: 200px;
+  width: 250px;
   height: 50px;
   background-color: #F6A605;
-  color: white;
-  font-family: 'Passion one', cursive;
+  color: #fff;
+  font-family: 'Passion One', cursive;
   font-size: 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-}
-
-.titre2{
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poly', sans-serif;
-    font-size: 20px;
-    color: #953910;
-}
-
-.liste_ingredients{
-  width: 100%;
-  height: 300px;
-  margin-top: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Poly', sans-serif;
-  font-size: 25px;
-  color: #953910;
-}
-
-.texte3{
-  width: 100%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-      font-family: 'Poly', sans-serif;
-    font-size: 20px;
-    color: #953910;
+  }
+.button button:hover{
+  opacity: .95;
+  transform: translateY(-1px);
+  transition: .15s ease;
 }
