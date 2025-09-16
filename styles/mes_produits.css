@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/mes_produits/background.png);
+  background-size: cover;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* --------section1---------*/
+
+.section1{
+  width: 100%;
+  height: 600px;
+  margin-top: 10%;
+}
+
+video{
+width: 100%;
+height: 600px;
+object-fit: cover;
+}
+
+.section2{
+  width: 100%;
+  height: 1000px;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section2_div{
+width: 50%;
+margin-top: 10%;
+display: flex;
+justify-content: center;
+}
+
+.titre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poly';
+  font-size: 25px;
+  font-weight: lighter;
+  color: #953910;
+}
+
+.fiche-produit {
+  width: 360px;
+  height: 400px;
+  background-image: url('../images/mes_produits/fond_fiche_produit.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  padding: 20px 20px 60px;
+  margin-top: 15%;
+  justify-content: center;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plat-img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  z-index: 1;
+  
+}
+
+.contenu p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000;
+  position: relative;
+  bottom: 20%;
+  padding: 5%;
+  
+  
+}
+
+.boutons {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 20px;
+  margin-bottom: 40%;
+  position: relative;
+  bottom: 20%;
+}
+
+.ajouter, .voir-plus {
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.ajouter {
+  background-color: #f5b021;
+}
+
+.voir-plus {
+  background-color: #a52121;
+}
+
+.ajouter:hover, .voir-plus:hover {
+  transform: scale(1.05);
+}
+
+/* -------section3------- */
+
+.section3{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section3_text{
+  display: flex;
+  justify-content: center;
+  font-family: 'Poly';
+  color: #953910;
+  font-size: 25px;
+}
+
+.fond_box{
+  width: 100%;
+  height: 800px;
+  background-image: url(../images/mes_produits/fond_box.png);
+  background-size: contain;
+  display: flex;
+  justify-content: end;
+}
+
+.fond_box img{
+  width: 45%;
+  height: 55%;
+}
+
+.text_box{
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poly';
+  color: #702a0c;
+}
+
+.text_box a{
+  text-decoration: none;
+  background-color: #C00F0C;
+  width: 20%;
+  height: 80px;
+  text-align: center;
+  align-content: center;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Passion One';
+  font-size: 30px;
+}
+

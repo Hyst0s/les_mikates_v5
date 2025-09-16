@@ -1,0 +1,102 @@
+:root{
+  --page-grad-start: #fff7e6;
+  --page-grad-end:   #ffe9d6;
+
+  --panel-bg:        #ffe2b3;  
+  --field-bg:        #ffeac9;  
+  --field-bd:        #f3b46b;
+  --text:            #6b3b1d;  
+  --muted:           #8f5732;
+
+  --accent-1:        #ff8a1a;  
+  --accent-2:        #ff6200;
+
+  --radius-lg: 28px;
+  --radius-md: 14px;
+  --shadow-lg: 0 18px 40px rgba(0,0,0,.12);
+  --shadow-sm: 0 6px 16px rgba(0,0,0,.08);
+  --focus: rgba(255, 122, 26, .35);
+}
+
+
+.card{
+  width:min(92vw, 600px);
+  background:var(--panel-bg);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-lg);
+  padding:40px 34px 30px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.title{
+  margin:0 0 22px;
+  font-weight:700;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height:1.05;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+form{
+  display:grid;
+  gap:16px;
+  margin-top:10px;
+}
+
+.field{
+  display:grid;
+  gap:8px;
+}
+
+label{
+  font-size:15pt;
+  color:var(--muted);
+  font-weight:600;
+  padding-left:2px;
+}
+
+input{
+  width:100%;
+  border:2px solid var(--field-bd);
+  background:var(--field-bg);
+  border-radius:var(--radius-md);
+  padding:14px 16px;
+  font-size:16px;
+  color:var(--text);
+  outline:0;
+  transition: box-shadow .2s ease, border-color .2s ease, transform .04s ease;
+}
+
+input::placeholder{
+  color: color-mix(in srgb, var(--muted) 88%, transparent);
+  opacity:1;
+}
+
+input:focus-visible{
+  border-color: var(--accent-1);
+  box-shadow: 0 0 0 6px var(--focus);
+}
+
+button{
+  margin-top:10px;
+  border:0;
+  border-radius: var(--radius-md);
+  padding:16px 18px;
+  font-weight:700;
+  font-size:18px;
+  color:#fff;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  box-shadow: var(--shadow-sm);
+  cursor:pointer;
+  transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+button:hover{ filter: saturate(1.05) brightness(1.02); }
+button:active{ transform: translateY(1px); }
+button:focus-visible{ box-shadow: 0 0 0 6px var(--focus); outline: 0; }
+
+
