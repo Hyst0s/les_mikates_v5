@@ -1,16 +1,13 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import Lotcartes from './App.jsx';
-import Inscription from './composants/inscription/inscription.jsx';
-import Connexion from './connexion.jsx';
-import Description_plat from './description_plat.jsx';
+import Form_inscription from './composants/inscription/inscription.jsx';
+import Form_connexion from './composants/connexion/connexion.jsx';
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Lotcartes />
-    <Inscription />
-    <Description_plat />
-    
+    <Form_inscription />
+    <Form_connexion />
   </StrictMode>
 );
+

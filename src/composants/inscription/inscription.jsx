@@ -1,11 +1,11 @@
-import "./inscripion.css";
+import "./inscription.css";
 
 export default function Form_inscription() {
   return (
       <main class="card" role="main" aria-labelledby="titre">
         <h1 id="titre" class="title">Inscription</h1>
 
-        <form action="../formulaire_inscription\config_inscription.php" method="post">
+        <form action="../formulaire_inscription/config_inscription.php" method="post">
           <div class="field">
             <label for="nom">Nom</label>
             <input id="nom" name="nom" type="text" placeholder="Nom" required autocomplete="family-name" />
