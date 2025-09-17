@@ -14,29 +14,18 @@ export default function TextMonHistoire() {
             <SplitText
 
 
-  className="text-2xl font-semibold text-center"
-
-  delay={50}
-
-  duration={0.6}
-
-  ease="power3.out"
-
-  splitType="chars"
-
-  from={{ opacity: 0, y: 40 }}
-
-  to={{ opacity: 1, y: 0 }}
-
-  threshold={0.1}
-
-  rootMargin="-100px"
-
-  textAlign="center"
-
-  onLetterAnimationComplete={handleAnimationComplete}
-  
-  tag ="p"
+className="text-2xl font-semibold text-center"
+delay={50}
+duration={0.6}
+ease="power3.out"
+splitType="chars"
+from={{ opacity: 0, y: 40 }}
+to={{ opacity: 1, y: 0 }}
+threshold={0.1}
+rootMargin="-100px"
+textAlign="center"
+onLetterAnimationComplete={handleAnimationComplete}
+tag ="p"
 
 />
             <p>
