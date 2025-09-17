@@ -15,21 +15,23 @@ import Carte_prod_panier from './composants/carte_prod_panier/carte_prod_panier.
 import Carrousel from './composants/carrousel/carrousel.jsx';
 import Banniere from './composants/banniere/banniere.jsx';
 import Bloc_commande from './composants/bloc_commande/bloc_commande.jsx';
+import TextMonHistoire from './composants/text_mon_histoire/text_mon_histoire.jsx';
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header />
+    <Lotcartes />
     <Form_inscription />
-    {/* <Form_connexion /> */}
     <Fiche_produit />
-    <Avis_client />
-    {/* <Carte_produit /> */}
-    <Carte_prod_panier />
-    <Carrousel />
     <Banniere />
+    <Avis_client />
+    <Carrousel />   
+    <Carte_prod_panier />
     <Bloc_commande />
+    <Form_connexion />
+    <Header />
     <Footer />
+    <TextMonHistoire />
   </StrictMode>
 );
-
