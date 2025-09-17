@@ -11,6 +11,7 @@ import Produit_panier from './produit_panier.jsx';
 import Bloc_commande from './bloc_commande.jsx';
 import Header from './header.jsx';
 import Footer from './footer.jsx';
+import TextMonHistoire from './text_mon_histoire.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -26,6 +27,7 @@ createRoot(document.getElementById('root')).render(
     <Connexion />
     <Header />
     <Footer />
+    <TextMonHistoire />
     
   </StrictMode>
 );
