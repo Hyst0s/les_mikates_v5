@@ -10,15 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD:package.json
-    "@tailwindcss/vite": "^4.1.13",
-    "motion": "^12.23.13",
-=======
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.1.13",
     "framer-motion": "^12.23.13",
     "gsap": "^3.13.0",
->>>>>>> upstream/HEAD:test_react/package.json
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.13"
