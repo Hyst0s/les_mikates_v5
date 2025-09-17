@@ -13,3 +13,8 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 [text](https://mui.com/material-ui/getting-started/templates/)
+Librairie animation JS :
+-    motion 
+-    prime react
+-    magic ui 
+-    Tailwind CSS
