@@ -1,0 +1,26 @@
+:root{
+  --page-grad-start: #fff7e6;
+  --page-grad-end:   #ffe9d6;
+
+  --panel-bg:        #ffe2b3;  
+  --field-bg:        #ffeac9;  
+  --field-bd:        #f3b46b;
+  --text:            #6b3b1d;  
+  --muted:           #8f5732;
+
+  --accent-1:        #ff8a1a;  
+  --accent-2:        #ff6200;
+
+  --radius-lg: 28px;
+  --radius-md: 14px;
+  --shadow-lg: 0 18px 40px rgba(0,0,0,.12);
+  --shadow-sm: 0 6px 16px rgba(0,0,0,.08);
+  --focus: rgba(255, 122, 26, .35);
+}
+
+body{
+    background-image: url(src/assets/images/accueil/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

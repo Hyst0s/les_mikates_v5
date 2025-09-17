@@ -21,8 +21,16 @@ footer{
   color: #371708;
 }
 
+.text4 h1{
+  width: 35%;
+}
+.text4 h3{
+  width: 37%;
+  margin-left: -4%;
+}
+
 .text4 input{
-  width: 10%;
+  width: 15%;
   height: 40px;
   border-radius: 10px;
 }

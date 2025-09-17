@@ -1,5 +1,9 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import './assets/generales/generales.css'; //importation des variables css
+import './assets/fonts/fonts.css'; //importation des typographie de la page
+
+
 import Header from './composants/header/header.jsx';
 import Footer from './composants/footer/footer.jsx';
 import Form_inscription from './composants/inscription/inscription.jsx';
